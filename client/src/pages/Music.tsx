@@ -13,7 +13,7 @@ const releases = [
     type: "EP",
     year: "2025",
     spotifyId: "6eBuVdaSEL3BBJ83ELiOsh",
-    description: "Rock, jam, and jazz influences exploring new sonic territory."
+    description: "Rock, jam, and jazz influences."
   },
   {
     title: "Poolside Clams",
