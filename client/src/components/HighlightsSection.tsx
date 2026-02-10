@@ -1,45 +1,40 @@
-import { googleDriveImages } from "@/lib/images";
-
 export default function HighlightsSection() {
   return (
-    <section className="py-16 bg-dcss-warm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section className="py-16 bg-mg-dark">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-3 gap-8 text-center">
+          <a 
+            href="https://open.spotify.com/artist/4fbu4uj2jCKMf0XrhyGbHL" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-mg-muted p-8 rounded-xl hover:bg-opacity-80 transition-all duration-200 group"
+          >
+            <i className="fab fa-spotify text-mg-gold text-4xl mb-4 group-hover:scale-110 transition-transform"></i>
+            <h3 className="text-xl font-heading font-bold text-mg-light mb-2">Stream on Spotify</h3>
+            <p className="text-gray-400 font-body text-sm">Listen to our latest releases</p>
+          </a>
           
-          {/* WinterWonderGrass Highlight */}
-          <div className="text-center md:text-left flex flex-col justify-center">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-dcss-dark mb-6">Festival Tested, Venue Approved</h2>
-            <div className="relative overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={googleDriveImages.highlightsImage} 
-                alt="DCSS performing to full audience at festival" 
-                className="w-full h-64 object-cover"
-              />
-            </div>
-          </div>
-
-          {/* Westword Quote */}
-          <div className="bg-dcss-dark text-dcss-light p-8 rounded-xl shadow-lg flex items-center justify-center h-full">
-            <div className="text-center">
-              <i className="fas fa-quote-left text-dcss-orange text-4xl mb-4"></i>
-              <blockquote className="text-2xl md:text-3xl font-heading font-bold mb-4">
-                "Best New Bluegrass Band"
-              </blockquote>
-              <cite className="text-dcss-orange font-heading font-semibold">
-                — Denver Westword, 2022
-              </cite>
-              <div className="mt-6">
-                <a 
-                  href="https://www.westword.com/best-of/2022/music-and-venues/best-new-bluegrass-band-13811607" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-dcss-orange hover:text-orange-400 underline"
-                >
-                  Read Full Article
-                </a>
-              </div>
-            </div>
-          </div>
+          <a 
+            href="https://www.youtube.com/channel/UCPjBfP9MkLN4Im3TUBXws1g" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-mg-muted p-8 rounded-xl hover:bg-opacity-80 transition-all duration-200 group"
+          >
+            <i className="fab fa-youtube text-mg-gold text-4xl mb-4 group-hover:scale-110 transition-transform"></i>
+            <h3 className="text-xl font-heading font-bold text-mg-light mb-2">Watch on YouTube</h3>
+            <p className="text-gray-400 font-body text-sm">Videos, live sessions & more</p>
+          </a>
+          
+          <a 
+            href="https://www.instagram.com/melodious_gaeng" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-mg-muted p-8 rounded-xl hover:bg-opacity-80 transition-all duration-200 group"
+          >
+            <i className="fab fa-instagram text-mg-gold text-4xl mb-4 group-hover:scale-110 transition-transform"></i>
+            <h3 className="text-xl font-heading font-bold text-mg-light mb-2">Follow on Instagram</h3>
+            <p className="text-gray-400 font-body text-sm">Behind the scenes & updates</p>
+          </a>
         </div>
       </div>
     </section>

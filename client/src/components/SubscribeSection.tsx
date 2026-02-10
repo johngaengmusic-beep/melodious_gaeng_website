@@ -1,27 +1,30 @@
-import { Button } from "@/components/ui/button";
-
 export default function SubscribeSection() {
-  const handleJoinNewsletter = () => {
-    window.open('http://eepurl.com/jlJh8w', '_blank');
-  };
-
   return (
-    <section className="py-16 bg-dcss-orange subscribe-section">
+    <section className="py-16 bg-mg-gold">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl md:text-5xl font-heading font-bold text-dcss-light mb-6">
+        <h2 className="text-4xl md:text-5xl font-heading font-bold text-mg-dark mb-6">
           Stay Connected
         </h2>
-        <p className="text-xl text-dcss-light mb-8">
-          Subscribe for updates on new shows, releases, and more!
+        <p className="text-xl text-mg-dark mb-4 font-body">
+          Follow along for new releases, collaborations, and more.
         </p>
-        
-        <div className="max-w-md mx-auto">
-          <Button 
-            onClick={handleJoinNewsletter}
-            className="bg-dcss-light text-dcss-orange hover:bg-dcss-warm font-heading font-semibold px-12 py-4 text-lg"
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+          <a
+            href="https://www.instagram.com/melodious_gaeng"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-mg-dark text-mg-gold hover:bg-mg-muted font-heading font-semibold px-8 py-3 rounded-lg text-lg transition-colors inline-flex items-center justify-center gap-2"
           >
-            Join Newsletter
-          </Button>
+            <i className="fab fa-instagram"></i> Instagram
+          </a>
+          <a
+            href="https://open.spotify.com/artist/4fbu4uj2jCKMf0XrhyGbHL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-mg-dark text-mg-gold hover:bg-mg-muted font-heading font-semibold px-8 py-3 rounded-lg text-lg transition-colors inline-flex items-center justify-center gap-2"
+          >
+            <i className="fab fa-spotify"></i> Spotify
+          </a>
         </div>
       </div>
     </section>

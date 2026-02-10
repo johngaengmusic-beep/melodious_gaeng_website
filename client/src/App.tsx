@@ -7,26 +7,24 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Home from "@/pages/Home";
-import Shows from "@/pages/Shows";
 import About from "@/pages/About";
 import Music from "@/pages/Music";
-import Videos from "@/pages/Videos";
-import EPK from "@/pages/EPK";
+import Socials from "@/pages/Socials";
+import Press from "@/pages/Press";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
 
 function AppRouter() {
   return (
     <Router hook={useHashLocation}>
-      <div className="min-h-screen bg-dcss-light">
+      <div className="min-h-screen bg-mg-light">
         <Navigation />
         <Switch>
           <Route path="/" component={Home} />
-          <Route path="/shows" component={Shows} />
           <Route path="/about" component={About} />
           <Route path="/music" component={Music} />
-          <Route path="/videos" component={Videos} />
-          <Route path="/epk" component={EPK} />
+          <Route path="/socials" component={Socials} />
+          <Route path="/press" component={Press} />
           <Route path="/contact" component={Contact} />
           <Route component={NotFound} />
         </Switch>

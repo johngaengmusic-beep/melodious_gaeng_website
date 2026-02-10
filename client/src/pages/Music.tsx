@@ -1,34 +1,21 @@
 import FollowUsSection from "@/components/FollowUsSection";
 
 export default function Music() {
-  const tracks = [
-    { number: "01", title: "Intro" },
-    { number: "02", title: "Goodbye Television" },
-    { number: "03", title: "Foreign Waters" },
-    { number: "04", title: "High Up On This Mountain" },
-    { number: "05", title: "Palisade Breakdown" },
-    { number: "06", title: "Ivy Branch Trail" },
-    { number: "07", title: "Same Old Dance" },
-    { number: "08", title: "Blue Salt (Live)" },
-    { number: "09", title: "Rock Song" },
-    { number: "10", title: "D-Town and Bound" },
-    { number: "11", title: "Outro" },
-  ];
-
   return (
-    <div className="pt-16 min-h-screen bg-dcss-dark text-dcss-light">
+    <div className="pt-16 min-h-screen bg-mg-dark text-mg-light">
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">Music</h1>
-            <p className="text-xl text-dcss-light">Listen to our debut album "Crik" on Spotify</p>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Each release is an opportunity to explore new sounds, work with different musicians, and see where the songs naturally lead.
+            </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Spotify Embed */}
-            <div className="bg-dcss-light rounded-xl p-6">
+          <div className="max-w-3xl mx-auto mb-12">
+            <div className="bg-mg-muted rounded-xl p-4">
               <iframe 
-                src="https://open.spotify.com/embed/album/4rxFBL7xVADypnLF0PO968?utm_source=generator&theme=0" 
+                src="https://open.spotify.com/embed/artist/4fbu4uj2jCKMf0XrhyGbHL?utm_source=generator&theme=0" 
                 width="100%" 
                 height="380" 
                 frameBorder="0" 
@@ -36,39 +23,30 @@ export default function Music() {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"
                 className="rounded-lg"
-                title="Crik Album on Spotify"
+                title="Melodious Gaeng on Spotify"
               />
             </div>
-            
-            {/* Track Listing */}
-            <div className="space-y-4">
-              <h3 className="text-2xl font-heading font-bold text-dcss-orange mb-6">Track Listing</h3>
-              <div className="space-y-3">
-                {tracks.map((track) => (
-                  <div 
-                    key={track.number} 
-                    className="flex items-center space-x-3 p-3 bg-dcss-accent bg-opacity-20 rounded-lg hover:bg-opacity-30 transition-colors duration-200"
-                  >
-                    <span className="text-dcss-orange font-heading font-semibold w-8">
-                      {track.number}.
-                    </span>
-                    <span>{track.title}</span>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="mt-8">
-                <a 
-                  href="https://open.spotify.com/album/4rxFBL7xVADypnLF0PO968" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 bg-dcss-orange hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-heading font-semibold transition-colors duration-200"
-                >
-                  <i className="fab fa-spotify"></i>
-                  <span>Listen on Spotify</span>
-                </a>
-              </div>
-            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <a 
+              href="https://open.spotify.com/artist/4fbu4uj2jCKMf0XrhyGbHL?si=0GIMF3N7TO-yNIlIX1sfLg" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-mg-gold hover:bg-yellow-700 text-mg-dark px-8 py-4 rounded-lg font-heading font-bold text-lg transition-colors duration-200"
+            >
+              <i className="fab fa-spotify text-xl"></i>
+              Listen on Spotify
+            </a>
+            <a 
+              href="https://www.youtube.com/channel/UCPjBfP9MkLN4Im3TUBXws1g" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 border-2 border-mg-gold text-mg-gold hover:bg-mg-gold hover:text-mg-dark px-8 py-4 rounded-lg font-heading font-bold text-lg transition-colors duration-200"
+            >
+              <i className="fab fa-youtube text-xl"></i>
+              Watch on YouTube
+            </a>
           </div>
         </div>
       </section>

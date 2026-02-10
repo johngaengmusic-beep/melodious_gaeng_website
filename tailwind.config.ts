@@ -61,12 +61,11 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
-        // DCSS Brand Colors
-        'dcss-dark': '#1C1C1C',
-        'dcss-orange': '#FC8448',
-        'dcss-light': '#F9F9F9',
-        'dcss-warm': '#F5F0E6',
-        'dcss-accent': '#1E392A'
+        'mg-dark': '#121212',
+        'mg-gold': '#D4944C',
+        'mg-light': '#FAFAFA',
+        'mg-warm': '#F5F0E6',
+        'mg-muted': '#333333'
       },
       fontFamily: {
         sans: ["var(--font-sans)"],

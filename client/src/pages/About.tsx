@@ -3,60 +3,38 @@ import { googleDriveImages } from "@/lib/images";
 
 export default function About() {
   return (
-    <div className="pt-16 min-h-screen bg-dcss-light">
+    <div className="pt-16 min-h-screen bg-mg-light">
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-dcss-dark mb-6">
-              About + Press
+            <h1 className="text-4xl md:text-5xl font-heading font-bold text-mg-dark mb-6">
+              About
             </h1>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Bio Text */}
             <div className="space-y-6">
-              <p className="text-lg leading-relaxed">
-                Formed in 2012 in Harford County, Maryland, Deer Creek Sharp Shooters (DCSS) are six friends united by their shared passion for bluegrass and a vision to explore the boundaries of acoustic music. Since relocating to Steamboat Springs and Denver, Colorado in 2016, the band has truly hit its stride, blending traditional bluegrass roots with a playful, innovative spirit.
+              <p className="text-lg leading-relaxed text-mg-dark">
+                Melodious Gaeng is a creative music project founded by brothers Harrison and Liam Gaeng, who collaborate from 1,700 miles apart. What started as a long-distance experiment has become an ever-evolving journey through diverse musical landscapes&mdash;blending rock, jam, and jazz influences with acoustic-driven bluegrass, country, and even Caribbean-inspired rhythms.
               </p>
               
-              <p className="text-lg leading-relaxed">
-                Known for their high-energy performances and infectious camaraderie, DCSS creates a show experience that's as much about connection as it is about music. From blistering, fast-paced bluegrass jams to quirky, crowd-pleasing tunes about cats, their setlists are as dynamic as their personalities. Drawing inspiration from bluegrass legends and weaving in their own unique twist, DCSS offers a sound that's equal parts tradition and fresh creativity.
+              <p className="text-lg leading-relaxed text-mg-dark">
+                With no fixed boundaries, each release is an opportunity to explore new sounds, work with different musicians, and see where the songs naturally lead. Some listeners connect with a specific style; others follow the journey for the excitement of what&rsquo;s next. As Harrison puts it, &ldquo;Our goal is to let the music lead.&rdquo;
               </p>
               
-              <p className="text-lg leading-relaxed">
-                Named "Best New Bluegrass Band" by Denver Westword in 2022, DCSS has performed at prestigious festivals such as WinterWonderGrass Steamboat, Palisade Bluegrass and Roots, The Ramble Festival, and Tico Time Bluegrass Festival. In 2023, they released their debut album, Crik, a collection of original songs that showcase their musicianship, storytelling, and sense of fun.
+              <p className="text-lg leading-relaxed text-mg-dark">
+                Melodious Gaeng works much like a studio collective, bringing in top talent to shape each track. Collaborators have included members of Flash Mountain Flood, Jake Leg Band, Squeaky Feet, Envy Alo, Deer Creek Sharp Shooters, and Little Moon Travelers. Recordings take place at Vermillion Road Studios in Longmont, CO, engineered by Eric Wiggs and produced by Derek Dames Ohls&mdash;both renowned Colorado musicians who contribute their own artistry to the music.
               </p>
 
-              <p className="text-lg leading-relaxed">
-                Whether you're a die-hard bluegrass fan or just looking for a good time, DCSS promise a performance that will leave you smiling, clapping, and maybe even singing along. Find their music on all streaming platforms, follow them on Instagram and Facebook (@deercreeksharpshooters), and <a href="http://eepurl.com/jlJh8w" target="_blank" rel="noopener noreferrer" className="text-dcss-orange hover:underline font-semibold">join their newsletter</a> to stay up to date with shows, new releases, and more!
+              <p className="text-lg leading-relaxed text-mg-dark">
+                Inspired by the meticulous craftsmanship of Steely Dan, the constant reinvention of Michael Nau, and the adventurous spirit of any musician chasing inspiration, Melodious Gaeng continues to evolve&mdash;always following the music, wherever it may lead.
               </p>
-
-              {/* Press Quote */}
-              <div className="bg-dcss-dark text-dcss-light p-6 rounded-xl mt-8">
-                <blockquote className="text-2xl font-heading font-bold mb-4">
-                  "Best New Bluegrass Band"
-                </blockquote>
-                <cite className="text-dcss-orange font-heading font-semibold">
-                  — Denver Westword, 2022
-                </cite>
-                <div className="mt-4">
-                  <a 
-                    href="https://www.westword.com/best-of/2022/music-and-venues/best-new-bluegrass-band-13811607" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-dcss-orange hover:text-orange-400 underline"
-                  >
-                    Read Full Article
-                  </a>
-                </div>
-              </div>
             </div>
             
-            {/* Band Photo */}
             <div className="flex justify-center">
               <img 
                 src={googleDriveImages.aboutBandPhoto} 
-                alt="DCSS green room group photo" 
+                alt="Melodious Gaeng" 
                 className="rounded-lg shadow-md w-full max-w-md"
               />
             </div>
