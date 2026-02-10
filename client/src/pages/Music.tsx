@@ -6,7 +6,7 @@ const releases = [
     type: "EP",
     year: "2025",
     spotifyId: "0VfNWLrk57ZA527WzdDsWn",
-    description: "Acoustic-driven bluegrass and country with heartfelt storytelling."
+    description: "Acoustic-driven bluegrass and country."
   },
   {
     title: "Satyr's Sun",
