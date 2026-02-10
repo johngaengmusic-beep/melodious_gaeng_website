@@ -17,7 +17,7 @@ import NotFound from "@/pages/not-found";
 function AppRouter() {
   return (
     <Router hook={useHashLocation}>
-      <div className="min-h-screen bg-mg-light">
+      <div className="min-h-screen bg-mg-sand">
         <Navigation />
         <Switch>
           <Route path="/" component={Home} />

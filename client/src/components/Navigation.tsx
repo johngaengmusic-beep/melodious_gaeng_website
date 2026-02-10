@@ -16,12 +16,12 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-mg-dark text-mg-light fixed w-full z-50 shadow-lg border-b border-mg-muted">
+    <nav className="bg-mg-brown text-mg-cream fixed w-full z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/">
-              <div className="text-mg-gold font-heading font-bold text-lg tracking-wide">
+              <div className="text-mg-terra font-heading font-bold text-lg tracking-wide">
                 MELODIOUS GAENG
               </div>
             </Link>
@@ -35,8 +35,8 @@ export default function Navigation() {
                   href={item.href}
                   className={`font-heading font-medium transition-colors duration-200 ${
                     location === item.href
-                      ? "text-mg-gold"
-                      : "text-mg-light hover:text-mg-gold"
+                      ? "text-mg-terra"
+                      : "text-mg-cream hover:text-mg-terra"
                   }`}
                 >
                   {item.name}
@@ -48,7 +48,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               type="button"
-              className="text-mg-light hover:text-mg-gold"
+              className="text-mg-cream hover:text-mg-terra"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -59,15 +59,15 @@ export default function Navigation() {
       
       {mobileMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-mg-dark">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-mg-brown">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 className={`block px-3 py-2 font-heading transition-colors duration-200 ${
                   location === item.href
-                    ? "text-mg-gold"
-                    : "text-mg-light hover:text-mg-gold"
+                    ? "text-mg-terra"
+                    : "text-mg-cream hover:text-mg-terra"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >

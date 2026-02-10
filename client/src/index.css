@@ -5,57 +5,58 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(0, 0%, 98%);
-  --foreground: hsl(0, 0%, 11%);
-  --card: hsl(0, 0%, 98%);
-  --card-foreground: hsl(0, 0%, 11%);
-  --popover: hsl(0, 0%, 98%);
-  --popover-foreground: hsl(0, 0%, 11%);
-  --primary: hsl(35, 78%, 62%);
-  --primary-foreground: hsl(0, 0%, 7%);
-  --secondary: hsl(0, 0%, 11%);
-  --secondary-foreground: hsl(0, 0%, 98%);
-  --muted: hsl(0, 0%, 93%);
-  --muted-foreground: hsl(0, 0%, 45%);
-  --accent: hsl(35, 78%, 62%);
-  --accent-foreground: hsl(0, 0%, 7%);
+  --background: hsl(35, 30%, 92%);
+  --foreground: hsl(20, 20%, 20%);
+  --card: hsl(35, 30%, 92%);
+  --card-foreground: hsl(20, 20%, 20%);
+  --popover: hsl(35, 30%, 92%);
+  --popover-foreground: hsl(20, 20%, 20%);
+  --primary: hsl(14, 55%, 52%);
+  --primary-foreground: hsl(40, 40%, 95%);
+  --secondary: hsl(120, 12%, 55%);
+  --secondary-foreground: hsl(40, 40%, 95%);
+  --muted: hsl(35, 22%, 85%);
+  --muted-foreground: hsl(20, 10%, 45%);
+  --accent: hsl(14, 55%, 52%);
+  --accent-foreground: hsl(40, 40%, 95%);
   --destructive: hsl(0, 84%, 60%);
-  --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(0, 0%, 88%);
-  --input: hsl(0, 0%, 93%);
-  --ring: hsl(35, 78%, 62%);
+  --destructive-foreground: hsl(40, 40%, 95%);
+  --border: hsl(30, 18%, 78%);
+  --input: hsl(35, 22%, 88%);
+  --ring: hsl(14, 55%, 52%);
   --radius: 0.5rem;
 
-  --mg-dark: hsl(0, 0%, 7%);
-  --mg-gold: hsl(35, 78%, 62%);
-  --mg-light: hsl(0, 0%, 98%);
-  --mg-warm: hsl(40, 30%, 95%);
-  --mg-muted: hsl(0, 0%, 20%);
+  --mg-sand: hsl(35, 30%, 92%);
+  --mg-terra: hsl(14, 55%, 52%);
+  --mg-sage: hsl(120, 12%, 55%);
+  --mg-brown: hsl(20, 30%, 25%);
+  --mg-cream: hsl(40, 40%, 95%);
+  --mg-dust: hsl(30, 20%, 78%);
 
   --font-heading: 'Oswald', 'Montserrat', sans-serif;
   --font-body: 'Merriweather', 'Georgia', serif;
 }
 
 .dark {
-  --background: hsl(0, 0%, 7%);
-  --foreground: hsl(0, 0%, 98%);
-  --card: hsl(0, 0%, 11%);
-  --card-foreground: hsl(0, 0%, 98%);
-  --popover: hsl(0, 0%, 11%);
-  --popover-foreground: hsl(0, 0%, 98%);
-  --primary: hsl(35, 78%, 62%);
-  --primary-foreground: hsl(0, 0%, 7%);
-  --secondary: hsl(0, 0%, 98%);
-  --secondary-foreground: hsl(0, 0%, 7%);
-  --muted: hsl(0, 0%, 15%);
-  --muted-foreground: hsl(0, 0%, 65%);
-  --accent: hsl(35, 78%, 62%);
-  --accent-foreground: hsl(0, 0%, 7%);
+  --background: hsl(20, 30%, 25%);
+  --foreground: hsl(40, 40%, 95%);
+  --card: hsl(20, 25%, 30%);
+  --card-foreground: hsl(40, 40%, 95%);
+  --popover: hsl(20, 25%, 30%);
+  --popover-foreground: hsl(40, 40%, 95%);
+  --primary: hsl(14, 55%, 52%);
+  --primary-foreground: hsl(40, 40%, 95%);
+  --secondary: hsl(120, 12%, 55%);
+  --secondary-foreground: hsl(40, 40%, 95%);
+  --muted: hsl(20, 20%, 32%);
+  --muted-foreground: hsl(30, 15%, 65%);
+  --accent: hsl(14, 55%, 52%);
+  --accent-foreground: hsl(40, 40%, 95%);
   --destructive: hsl(0, 84%, 60%);
-  --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(0, 0%, 20%);
-  --input: hsl(0, 0%, 15%);
-  --ring: hsl(35, 78%, 62%);
+  --destructive-foreground: hsl(40, 40%, 95%);
+  --border: hsl(20, 20%, 35%);
+  --input: hsl(20, 20%, 32%);
+  --ring: hsl(14, 55%, 52%);
 }
 
 @layer base {
@@ -73,20 +74,23 @@
 }
 
 @layer utilities {
-  .text-mg-dark { color: var(--mg-dark); }
-  .text-mg-gold { color: var(--mg-gold); }
-  .text-mg-light { color: var(--mg-light); }
-  .text-mg-warm { color: var(--mg-warm); }
-  .text-mg-muted { color: var(--mg-muted); }
+  .text-mg-sand { color: var(--mg-sand); }
+  .text-mg-terra { color: var(--mg-terra); }
+  .text-mg-sage { color: var(--mg-sage); }
+  .text-mg-brown { color: var(--mg-brown); }
+  .text-mg-cream { color: var(--mg-cream); }
+  .text-mg-dust { color: var(--mg-dust); }
 
-  .bg-mg-dark { background-color: var(--mg-dark); }
-  .bg-mg-gold { background-color: var(--mg-gold); }
-  .bg-mg-light { background-color: var(--mg-light); }
-  .bg-mg-warm { background-color: var(--mg-warm); }
-  .bg-mg-muted { background-color: var(--mg-muted); }
+  .bg-mg-sand { background-color: var(--mg-sand); }
+  .bg-mg-terra { background-color: var(--mg-terra); }
+  .bg-mg-sage { background-color: var(--mg-sage); }
+  .bg-mg-brown { background-color: var(--mg-brown); }
+  .bg-mg-cream { background-color: var(--mg-cream); }
+  .bg-mg-dust { background-color: var(--mg-dust); }
 
-  .border-mg-gold { border-color: var(--mg-gold); }
-  .border-mg-muted { border-color: var(--mg-muted); }
+  .border-mg-terra { border-color: var(--mg-terra); }
+  .border-mg-dust { border-color: var(--mg-dust); }
+  .border-mg-brown { border-color: var(--mg-brown); }
 
   .font-heading { font-family: var(--font-heading); }
   .font-body { font-family: var(--font-body); }

@@ -61,11 +61,12 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
-        'mg-dark': '#121212',
-        'mg-gold': '#D4944C',
-        'mg-light': '#FAFAFA',
-        'mg-warm': '#F5F0E6',
-        'mg-muted': '#333333'
+        'mg-sand': '#E8DDD0',
+        'mg-terra': '#C0603A',
+        'mg-sage': '#7E9A7E',
+        'mg-brown': '#3D2E22',
+        'mg-cream': '#F5EDE3',
+        'mg-dust': '#C4B5A3',
       },
       fontFamily: {
         sans: ["var(--font-sans)"],

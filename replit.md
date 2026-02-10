@@ -10,7 +10,7 @@ Preferred communication style: Simple, everyday language.
 
 ## Full Site Conversion: DCSS to Melodious Gaeng
 - **Branding**: Complete rebrand from Deer Creek Sharp Shooters to Melodious Gaeng
-- **Color scheme**: Dark (#121212) + Gold (#D4944C) + Light (#FAFAFA) theme replacing old green/orange
+- **Color scheme**: Desert matte palette - Sand (#E8DDD0), Terracotta (#C0603A), Sage (#7E9A7E), Warm Brown (#3D2E22), Cream (#F5EDE3)
 - **Pages kept**: Home, About, Music, Contact (all rewritten for Melodious Gaeng)
 - **Pages added**: Socials (Instagram embed + social links), Press (media coverage + press info)
 - **Pages removed**: Shows, Videos, EPK, Merch
@@ -27,7 +27,7 @@ Preferred communication style: Simple, everyday language.
 - **Framework**: React 18 with TypeScript using Vite for build tooling
 - **Routing**: Wouter with hash-based routing for pages: Home, About, Music, Socials, Press, Contact
 - **UI Framework**: shadcn/ui components with Tailwind CSS
-- **Styling**: Custom CSS variables (mg-dark, mg-gold, mg-light, mg-warm, mg-muted) and typography (Oswald headings, Merriweather body)
+- **Styling**: Custom CSS variables (mg-sand, mg-terra, mg-sage, mg-brown, mg-cream, mg-dust) and typography (Oswald headings, Merriweather body)
 
 ## Backend Architecture
 - **Server**: Express.js with TypeScript
