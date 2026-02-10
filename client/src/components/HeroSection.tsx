@@ -13,7 +13,6 @@ export default function HeroSection() {
       }}
     >
       <div className="absolute inset-0 bg-mg-brown/50"></div>
-      
       <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
         <div className="mb-16 mt-10">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-mg-cream drop-shadow-lg tracking-wider">
@@ -22,9 +21,7 @@ export default function HeroSection() {
         </div>
         
         <div className="mb-16">
-          <p className="text-xl md:text-2xl lg:text-3xl font-body text-mg-sand drop-shadow-md max-w-3xl mx-auto leading-relaxed">
-            A creative vision without boundaries &mdash; chasing inspiration and seeing where it leads.
-          </p>
+          <p className="text-xl md:text-2xl lg:text-3xl font-body text-mg-sand drop-shadow-md max-w-3xl mx-auto leading-relaxed">A creative vision without boundaries — for the sake of the song</p>
         </div>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
