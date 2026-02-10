@@ -7,7 +7,7 @@ export default function HeroSection() {
       className="relative min-h-screen overflow-hidden flex items-center justify-center"
       style={{
         backgroundImage: `url(${googleDriveImages.heroBackground})`,
-        backgroundSize: '80%',
+        backgroundSize: 'cover',
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat'
       }}
