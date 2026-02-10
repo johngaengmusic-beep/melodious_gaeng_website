@@ -8,7 +8,7 @@ export default function HeroSection() {
       style={{
         backgroundImage: `url(${googleDriveImages.heroBackground})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat'
       }}
     >
