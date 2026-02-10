@@ -1,5 +1,29 @@
 import FollowUsSection from "@/components/FollowUsSection";
 
+const releases = [
+  {
+    title: "Melodious Twang",
+    type: "EP",
+    year: "2025",
+    spotifyId: "0VfNWLrk57ZA527WzdDsWn",
+    description: "Acoustic-driven bluegrass and country with heartfelt storytelling."
+  },
+  {
+    title: "Satyr's Sun",
+    type: "EP",
+    year: "2025",
+    spotifyId: "6eBuVdaSEL3BBJ83ELiOsh",
+    description: "Rock, jam, and jazz influences exploring new sonic territory."
+  },
+  {
+    title: "Poolside Clams",
+    type: "Single",
+    year: "2025",
+    spotifyId: "3Hvlam4luKWIojbVP3Awtf",
+    description: "A standalone instrumental single with Caribbean-inspired rhythms."
+  }
+];
+
 export default function Music() {
   return (
     <div className="pt-16 min-h-screen bg-mg-brown text-mg-cream">
@@ -12,20 +36,28 @@ export default function Music() {
             </p>
           </div>
           
-          <div className="max-w-3xl mx-auto mb-12">
-            <div className="bg-mg-brown rounded-xl p-4 border border-mg-dust/30">
-              <iframe 
-                src="https://open.spotify.com/embed/artist/4fbu4uj2jCKMf0XrhyGbHL?utm_source=generator&theme=0" 
-                width="100%" 
-                height="380" 
-                frameBorder="0" 
-                allowFullScreen
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy"
-                className="rounded-lg"
-                title="Melodious Gaeng on Spotify"
-              />
-            </div>
+          <div className="space-y-12 max-w-4xl mx-auto mb-12">
+            {releases.map((release) => (
+              <div key={release.spotifyId} className="bg-mg-cream/5 backdrop-blur-sm rounded-xl p-6 border border-mg-dust/20">
+                <div className="mb-4">
+                  <div className="flex items-baseline gap-3 mb-2">
+                    <h2 className="text-2xl md:text-3xl font-heading font-bold text-mg-cream">{release.title}</h2>
+                    <span className="text-sm font-heading text-mg-terra uppercase tracking-wider">{release.type} &middot; {release.year}</span>
+                  </div>
+                  <p className="text-mg-dust font-body">{release.description}</p>
+                </div>
+                <iframe
+                  src={`https://open.spotify.com/embed/album/${release.spotifyId}?utm_source=generator&theme=0`}
+                  width="100%"
+                  height="352"
+                  frameBorder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  className="rounded-lg"
+                  title={`${release.title} on Spotify`}
+                />
+              </div>
+            ))}
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -36,7 +68,7 @@ export default function Music() {
               className="inline-flex items-center justify-center gap-2 bg-mg-terra hover:bg-orange-800 text-mg-cream px-8 py-4 rounded-lg font-heading font-bold text-lg transition-colors duration-200"
             >
               <i className="fab fa-spotify text-xl"></i>
-              Listen on Spotify
+              Follow on Spotify
             </a>
             <a 
               href="https://www.youtube.com/channel/UCPjBfP9MkLN4Im3TUBXws1g" 
