@@ -1,44 +1,29 @@
-# Deer Creek Sharp Shooters - Official Website
+# Melodious Gaeng - Official Website
 
-Professional website for Deer Creek Sharp Shooters, a Colorado bluegrass band.
+Official website for Melodious Gaeng, a creative music project by brothers Harrison and Liam Gaeng.
 
-## Static Site Deployment
-
-This repository contains the production-ready static site files in the `dist/public` directory.
-
-### For Static Hosting (Porkbun, GitHub Pages, etc.)
-
-All files needed for deployment are in `dist/public/`:
-- `index.html` - Main website file
-- `assets/` - CSS, JavaScript, and image files
-- `DCSS_Stage_Plot_Input_List.pdf` - Press kit download
-
-### Features
+## Features
 
 - Responsive design optimized for all devices
+- Music streaming via Spotify embed
 - Social media integration (Instagram, Facebook, YouTube, Spotify)
-- Newsletter signup via Mailchimp
-- Downloadable press materials
-- Band member profiles and performance photos
-- Show listings and contact information
+- Press coverage and media information
+- Contact form for inquiries
 
-### Technology Stack
+## Technology Stack
 
 - React with TypeScript
 - Tailwind CSS
 - Vite build system
-- Static deployment ready
+- Deployed via GitHub Pages
 
-### Contact
+## Links
 
-- Email: DCSSbluegrass@gmail.com
-- Phone: 443-417-7287
-- Location: Colorado, USA
+- [Spotify](https://open.spotify.com/artist/4fbu4uj2jCKMf0XrhyGbHL)
+- [YouTube](https://www.youtube.com/channel/UCPjBfP9MkLN4Im3TUBXws1g)
+- [Instagram](https://www.instagram.com/melodious_gaeng)
+- [Facebook](https://www.facebook.com/melodiousgaeng/)
 
-## Social Media
+## Contact
 
-- [Instagram](https://www.instagram.com/deercreeksharpshooters)
-- [Facebook](https://www.facebook.com/deercreeksharpshooters)
-- [YouTube](https://www.youtube.com/@deercreeksharpshooters)
-- [Spotify](https://open.spotify.com/search/Deer%20Creek%20Sharp%20Shooters)
-- [Newsletter Signup](http://eepurl.com/jlJh8w)
+- Email: johngaengmusic@gmail.com

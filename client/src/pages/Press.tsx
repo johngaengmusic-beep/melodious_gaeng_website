@@ -38,7 +38,7 @@ export default function Press() {
                     Melodious Twang EP Reviewed by Glide Magazine
                   </blockquote>
                   <p className="text-mg-dust mb-4 font-body">
-                    Glide Magazine featured a review of the "Melodious Twang" EP and the track "Change of Plans" featuring Deer Creek Sharp Shooters.
+                    Glide Magazine featured a review of the "Melodious Twang" EP and the track "Change of Plans."
                   </p>
                   <cite className="text-mg-terra font-heading font-semibold">
                     &mdash; Glide Magazine
